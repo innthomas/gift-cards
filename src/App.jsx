@@ -11,7 +11,10 @@ function App() {
       <div className="container md:grid grid-cols-3 content-evenly mx-auto">
         {allGiftCards.map((giftCard) => {
           return (
-            <div className="card bg-slate-200 m-2 p-2" key={giftCard.id}>
+            <div
+              className="card bg-slate-200 m-2 p-2 hover:text-white hover:bg-slate-400"
+              key={giftCard.id}
+            >
               <div className="card-body">
                 <div className="card-title m-2 p-2 font-medium text-lg">
                   <h5>{giftCard.title}</h5>
